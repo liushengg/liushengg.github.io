@@ -10,14 +10,14 @@ theme: jekyll-theme-cayman
 title: wls
 brief-intro: Front-end Dev Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://wliusheng.github.io" 
+url: "https://liushengg.github.io" 
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: wliusheng
-facebook_username: wliusheng
-github_username:  wliusheng
-email: 985433289@qq.com
+twitter_username: liushengg
+facebook_username: liushengg
+github_username:  liushengg
+email: 296143344@qq.com
 weibo_username: 暂无
 zhihu_username: 暂无
 linkedIn_username: 暂无
@@ -28,8 +28,8 @@ description_footer: 本站记录我学习之旅
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #hygblog
-disqus_shortname: wliusheng
+duoshuo_shortname: #lsblog
+disqus_shortname: liushengg
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
