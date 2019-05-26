@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "JavaScript 作用域和作用域链"
-date:   2019-05-26 14:06:05
-categories: JavaScript
-tags: JavaScript 作用域 慕课网
-excerpt: JavaScript 作用域和作用域链学习笔记。
+title:  "String细节"
+date:   2015-03-26 15:14:54
+categories: Java
+tags: Java
 ---
 
 [TOC]
