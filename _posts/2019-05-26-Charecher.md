@@ -1,39 +1,50 @@
 ---
 layout: post
-title:  "Teach Girlfriend to make a Web Pages like Zhihu"
-date:   2015-03-21 15:14:54
-categories: Bootstrap
-tags: BootStrap HTML CSS Zhihu
+title:  "JavaScript 作用域和作用域链"
+date:   2019-05-26 14:06:05
+categories: JavaScript
+tags: JavaScript 作用域 慕课网 ife
+excerpt: JavaScript 作用域和作用域链学习笔记。
 ---
 
-* content
-{:toc}
+[TOC]
 
-My girlfriend is learning html and css recently. I told her to follow the video. Here, I recommend a video in Chinese that suite for fresh learners. The name of course is Getting HTML web pages dev in 8 hours ( 8小时学会HTML网页开发 ) . I watched this video at very first time. The teacher named Eighteen Swallows ( 燕十八 ) . He teached very clear even himself being on screen to show what is float or box-model.    
+### String字符串的赋值运算方式
 
+先上代码
 
+```java
+		String a = "何日依山尽";
+		String b = "欲穷千里目"; 
+		String c = a+b;
+		//System.out.println(b.length());
+		System.out.println(c);//自动拼接字符串
+		System.out.println(a.concat(b));
+		if(c.equals(a.concat(b))){
+			System.out.println(1);
+		}else{
+			System.out.println(2);
+		}
+		
+		String d="1"+2+3;  //碰到字符串后，直接输出了后面内容
+		String e ="1"+(2+3);//碰到字符串后，先运算括号中的值，后输出内容
+		String f =2+3+"4";//碰到字符串前，先运算，后输出
+		System.out.println(d);
+		System.out.println(e);
+		System.out.println(f);
+		
+	}
+```
 
+输出结果为：
 
-<!-- ![燕十八](http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-18swallows.png) -->
+```java
+何日依山尽欲穷千里目
+何日依山尽欲穷千里目
+1
+123
+15
+54
+```
 
-Here is the site of the free online video.
-[http://study.163.com/course/courseMain.htm?courseId=432008](http://study.163.com/course/courseMain.htm?courseId=432008)    
-
-I did the detailed note about this course. You can read here: [http://wenku.baidu.com/view/aa136099f90f76c660371a35](http://wenku.baidu.com/view/aa136099f90f76c660371a35)   
-
-Now I'll tell something happend today. She has watched the video above, and knows a little on BootStrap. So she wants to do some pages with BootStrap.    
-
-We determined to copy the pages on [Zhihu](http://zhihu.com)   
-Like this:   
-![知乎zhihu](http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-zhihu.jpg)   
-
-I teached her [Boostrap](http://www.bootcss.com/) this afternoon. She has already got to read the docs and can code simple statics pages.   
-
-She seems to enjoy Web Pages Design. Though she used to be a Graphic Designer. And now, she really works hard.
-
-At last I'll show the works that we did together in 2 hours. It's unfinished. I guess she will do it later. It's a nice weekend, isn't it?   
-
-[to see Copy Zhihu, click here](http://gaohaoyang.github.io/test/bootstrap-zhihu/)   
-
-screenshot of copy Zhihu:
-![Copy Zhihu](http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-CopyZhihu.jpg)
+总结：有字符串的赋值运算方式跟运算符优先级有关，需要通过运算符优先级判断是字符串的拼接赋值还是字符的编码赋值。
