@@ -1,110 +1,39 @@
-```
+---
 layout: post
-title:  "打印ASCII码大小写字母方法（包装类Charecher）"
-date:   2019-05-26 17:46:05
-categories: Java
-tags: Java
-excerpt:Java
+title:  "Teach Girlfriend to make a Web Pages like Zhihu"
+date:   2015-03-21 15:14:54
+categories: Bootstrap
+tags: BootStrap HTML CSS Zhihu
+---
 
-```
+* content
+{:toc}
 
-[TOC]
+My girlfriend is learning html and css recently. I told her to follow the video. Here, I recommend a video in Chinese that suite for fresh learners. The name of course is Getting HTML web pages dev in 8 hours ( 8小时学会HTML网页开发 ) . I watched this video at very first time. The teacher named Eighteen Swallows ( 燕十八 ) . He teached very clear even himself being on screen to show what is float or box-model.    
 
-### 打印小写字母
 
-```java
-public static void lowerCaseDemo(){
-		for(char c = 0;c < 128 ;c++){
-			if(Character.isLowerCase(c)){
-				System.out.println("value:"+(int)c+" Character:"+c);
-			}/*else{
-				System.out.println("value:"+(int)c+" Character:"+c);
-			}*/
-		}
-```
 
-输出：
 
-```
-value:97 Character:a
-value:98 Character:b
-value:99 Character:c
-value:100 Character:d
-value:101 Character:e
-value:102 Character:f
-value:103 Character:g
-value:104 Character:h
-value:105 Character:i
-value:106 Character:j
-value:107 Character:k
-value:108 Character:l
-value:109 Character:m
-value:110 Character:n
-value:111 Character:o
-value:112 Character:p
-value:113 Character:q
-value:114 Character:r
-value:115 Character:s
-value:116 Character:t
-value:117 Character:u
-value:118 Character:v
-value:119 Character:w
-value:120 Character:x
-value:121 Character:y
-value:122 Character:z
-```
+<!-- ![燕十八](http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-18swallows.png) -->
 
-### 打印大写字母
+Here is the site of the free online video.
+[http://study.163.com/course/courseMain.htm?courseId=432008](http://study.163.com/course/courseMain.htm?courseId=432008)    
 
-```
-public static void UpperCaseDemo(){
-		for(char c = 0;c < 128 ;c++){
-			if(Character.isUpperCase(c)){
-				System.out.println("value:"+(int)c+" Character:"+c);
-			}
-			
-		}
-	}
-```
+I did the detailed note about this course. You can read here: [http://wenku.baidu.com/view/aa136099f90f76c660371a35](http://wenku.baidu.com/view/aa136099f90f76c660371a35)   
 
-输出：
+Now I'll tell something happend today. She has watched the video above, and knows a little on BootStrap. So she wants to do some pages with BootStrap.    
 
-```
-略
-```
+We determined to copy the pages on [Zhihu](http://zhihu.com)   
+Like this:   
+![知乎zhihu](http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-zhihu.jpg)   
 
-### ###键盘输入String自动判断ASCII码对应的value值
+I teached her [Boostrap](http://www.bootcss.com/) this afternoon. She has already got to read the docs and can code simple statics pages.   
 
-利用String.charAt()来实现
+She seems to enjoy Web Pages Design. Though she used to be a Graphic Designer. And now, she really works hard.
 
-```
- 		//lowerCaseDemo();
-	 	//UpperCaseDemo();
-		Scanner sc = new Scanner(System.in);
-		System.out.println("输入String:");
-		String s = sc.nextLine();
-		for(int i = 0; i < s.length(); i++){
-			System.out.println("String中第"+(i+1)+
-					"个字符对应的ASCII码value值为："+(int)s.charAt(i));
-		}
-		sc.close();
-```
+At last I'll show the works that we did together in 2 hours. It's unfinished. I guess she will do it later. It's a nice weekend, isn't it?   
 
-输出：
+[to see Copy Zhihu, click here](http://gaohaoyang.github.io/test/bootstrap-zhihu/)   
 
-```
-输入String:
-123#%as <>+
-String中第1个字符对应的ASCII码value值为：49
-String中第2个字符对应的ASCII码value值为：50
-String中第3个字符对应的ASCII码value值为：51
-String中第4个字符对应的ASCII码value值为：35
-String中第5个字符对应的ASCII码value值为：37
-String中第6个字符对应的ASCII码value值为：97
-String中第7个字符对应的ASCII码value值为：115
-String中第8个字符对应的ASCII码value值为：32
-String中第9个字符对应的ASCII码value值为：60
-String中第10个字符对应的ASCII码value值为：62
-String中第11个字符对应的ASCII码value值为：43
-```
-
+screenshot of copy Zhihu:
+![Copy Zhihu](http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-CopyZhihu.jpg)
