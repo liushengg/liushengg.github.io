@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "String细节"
-date:   2015-03-26 15:14:54
-categories: Java
-tags: Java
+title:  "JavaScript 作用域和作用域链"
+date:   2019-05-12 14:06:05
+categories: JavaScript
+tags: JavaScript 作用域 慕课网 ife
+excerpt: JavaScript 作用域和作用域链学习笔记。
 ---
 
 [TOC]
